@@ -140,3 +140,21 @@ body {
 .card h3{
     margin: 0;
 }
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 30px;
+    color:grey;
+    font-size: 20px;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    font-size: 15px ;
+    padding: 10px 15px;
+}
