@@ -18,27 +18,27 @@ body {
 .header {
     display: flex;
     justify-content:space-between;
-    margin:10px;
+    margin: 0.625rem;
 }
 
 .nav-ul{
     display:flex;
-    gap: 30px;
+    gap: 1.875rem;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .logo {
-    font-size: 42px;
-    font-weight: 500px;
-    line-height: 42px;
+    font-size: 2.625rem;
+    font-weight: 31.25rem;
+    line-height: 2.625rem;
 }
 
 .nav-ul li a {
     color: #fff;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 25rem;
 }
 
 .nav-ul li a:hover {
@@ -47,77 +47,74 @@ body {
 
 .line {
     background-color: #fff;
-    height: 1px;
-    margin:0px;
+    height: 0.0625rem;
+    margin:0rem;
 }
 .main-section{
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
     font-family: 'Chivo', sans-serif;
     font-weight: 900;
-    line-height: 120px;
-    font-size: 120px;
+    line-height: 7.5rem;
+    font-size: 7.5rem;
     
 }
 
 .main-image img{
-    max-width: 1344px;
-    height: 672px;
-    border-radius: 56px;
+    width: 100%;
+    height: auto;  
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    
 }
 
 .main-image{
     text-align: center;
-    margin:32px 0;
+    margin:2rem;
 } 
 
 .main {
-    margin:32px 0;
+    margin:2rem 0;
 }
 
 .intro p{
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     font-weight: 400;
     text-align: center;
     font-family: "Chivo",sans-serif;
 }
 
 .about {
+    width: 100%;
     display: flex;
+    justify-content: end;
 }
 
 .object {
+    width: 50%;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: white; 
-    margin-left: 850px;
-    margin-right: 50px;
     font-family: "Archivo","sans-serif";
     
 }
-
 .intro{
-    padding-top: 72px;
-    padding-bottom: 72px;
-    padding-left: 250px;
-    padding-right: 250px ;
-    border: 1px solid black;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 15.625rem;
+    padding-right: 15.625rem ;
+    border: 0.0625rem solid black;
 }
 
 .about {
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem;
+
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
-    padding-top: 48px;
-    width: 1200px;
-    padding-right: 145px;
-}
 
 .body {
   font-family: "Archivo", sans-serif;
@@ -127,34 +124,162 @@ body {
   margin: 0;
 }
 
-.card h3,p {
-    text-align: left;
-    line-height: 24px;
-}
-
-.card p{
-    color:#FFFFFF99;
-    margin: 0;
-}
-
-.card h3{
-    margin: 0;
-}
-
 .footer{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin: 30px;
+    margin: 1.875rem;
     color:grey;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .button{
     background-color: black;
     color: white;
-    border-radius: 5px;
-    border: 0.5px solid grey;
-    font-size: 15px ;
-    padding: 10px 15px;
+    border-radius: 0.3125rem;
+    border: 0.03125rem solid grey;
+    font-size: 0.9375rem ;
+    padding: 0.625rem 0.9375rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem; 
+    justify-content: center; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 0.9375rem;
+}
+
+.info h3 {
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3125rem;
+    color:#FFFFFF;
+}
+
+.info p {
+    font-size: 0.875rem;
+    color: #FFFFFF99;
+    margin: 0rem;
+}
+
+@media screen(max-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .main-section {
+        font-size: 2.5rem;
+    }
+
+    .intro {
+        padding: 1.875rem;
+        font-size: 1rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
+    }
+
+    .about {
+        padding: 1.25rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        text-align: center;
+        gap: 0.625rem;
+    }
+    .object {
+        width: 100%;
+    }
+    .about {
+        justify-content: center;
+        padding: 0;
+    }
+    .object p{
+        text-align: center;
+    }
+    .main-image {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-section{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .nav-ul a {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main-image {
+        padding: 0rem;
+        margin: 1rem;
+    }
+
+    .container{
+        margin: 3.5rem;
+    }
+
+    .info h3 {
+        font-size: 0.75rem;
+        margin-top: 0rem;
+    }
+
+    .info p {
+        font-size: 0.75rem;
+        margin: 0rem;
+    }
+    .info{
+        padding: 0rem;
+    }
+    .object {
+        width: 100%;
+    }
+    .about {
+        justify-content: center;
+        padding: 0;
+    }
+    .object p{
+        text-align: center;
+    }
+    .intro p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .object p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .footer p{
+        font-size: 0.75rem;
+
+    }
 }
