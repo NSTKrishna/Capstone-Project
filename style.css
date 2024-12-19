@@ -170,7 +170,7 @@ body {
     margin: 0rem;
 }
 
-@media screen(max-width: 768px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: row;
         align-items: center;
@@ -188,6 +188,7 @@ body {
 
     .intro p {
         font-size: 2rem;
+        line-height: 2rem;
     }
 
     .about {
@@ -229,11 +230,9 @@ body {
         align-items: center;
         gap: 0.625rem;
     }
-
-    .nav-ul a {
-        font-size: 1rem;
+    .nav-ul li a{
+        font-size: 0.8rem;
     }
-
     .button {
         font-size: 0.5rem;
         padding: 0.5rem 1rem;
